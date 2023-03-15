@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atualizar Pessoas</title>
+    <link rel="stylesheet" href="_css/_css/form.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/maskinput.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+
+    <form action="index.php?class=CompanyForm&method=save" class="form_capitalize" method="post" enctype="multipart/form-data">
+
+        <label for="company_id">Código</label>
+        <input type="number" name="company_id" id="company_id" value="{company_id}" readonly style="width: 30%">
+
+        <label for="company_name">Nome</label>
+        <input type="text" name="company_name" id="company_name" value="{company_name}" required style="width: 50%">
+
+        <label for="company_cnpj">CNPJ</label>
+        <input type="text" name="company_cnpj" id="company_cnpj" class="wc_getCnpj formCnpj" value="{company_cnpj}" required style="width: 50%">
+
+
+        <label for="company_fantasy">Fantasy</label>
+        <input type="text" name="company_fantasy" id="company_fantasy" value="{company_fantasy}" required style="width: 50%">
+
+
+        <label for="company_cep">CEP</label>
+        <input type="text" name="company_cep" id="company_cep" class="wc_cepcompany_ formCep" value="{company_cep}" required style="width: 50%">
+
+        <label for="company_address">Endereço</label>
+        <input type="text" name="company_address" id="company_address" class="wc_logradouro " value="{company_address}" required style="width: 50%">
+
+        <label for="company_district">Bairro</label>
+        <input type="text" name="company_district" id="company_district" class="wc_bairro " value="{company_district}" required style="width: 50%">
+
+
+        <label for="company_number">Number</label>
+        <input type="text" name="company_number" id="company_number" class="wc_numero " value="{company_number}" required style="width: 50%">
+
+        <label for="company_phone">Telefone</label>
+        <input type="text" name="company_phone" id="company_phone" class="wc_telefone formPhone" value="{company_phone}" required style="width: 50%">
+
+        <label for="company_mail">E-mail</label>
+        <input type="email" name="company_mail" id="company_mail" value="{company_mail}" required style="width: 50%">
+
+        <label for="company_city">Cidade</label>
+        <input type="text" name='company_city' id="company_city" class="wc_municipio cep_city" value="{company_city}" required style='width: 50%'>
+
+        <label for="company_state">UF</label>
+        <input type="text" name='company_state' id="company_state" value="{company_state}" required style='width: 50%'>
+
+        <label class="actions">
+            <a href="index.php?class=CompanyList" class="btn btn-ligth-gray">
+                <img src='images/icons8-cancel-50.svg' style='width:25px'>
+                VOLTAR</a>
+
+            <button class='btn btn-ligth-gray' type='submit'>
+                <img src='images/icons8-settings-50.svg' style='width:25px'>
+                SALVAR
+            </button>
+        </label>
+    </form>
+
+</body>
+
+</html>

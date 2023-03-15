@@ -1,0 +1,70 @@
+
+
+.formulario {
+   /* background-color: darkgrey;*/
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: #BE7AFA;
+    text-shadow: -1px -1px 3px #00000085;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+body {
+    background-color: #fefae0;
+}
+
+.itens {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+table {
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+    margin: auto;
+    width: 500px;
+
+
+}
+
+table th {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #BE7AFA;
+    font-style: bold;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+}
+table tr {
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+    margin: 0;
+    padding: 0;
+}
+
+
+table td {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+}
+ 
+
